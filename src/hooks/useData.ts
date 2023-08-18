@@ -31,9 +31,9 @@ const useData = <T>(endpoint:string,requestConfig?:AxiosRequestConfig,deps?:any)
       });
 
     return () => controller.abort();
-  }, []);
+  },deps?[...deps]:[]);
 
-  useEffect(() => {},[])
+  // useEffect(() => {},[])
   return { data, error, isLoading };
 };
 
