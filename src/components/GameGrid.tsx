@@ -22,7 +22,7 @@ const GameGrid = ({gameQuery}:Props) => {
     <>
       {error && <Text>{error}</Text>}
       <SimpleGrid
-        column={{ sm: 1, md: 2, lg: 3, xl: 5 }}
+        column={{ sm: 1, md: 2, lg: 3, xl: 4 }}
         padding="20px"
         spacing={3}
       >
